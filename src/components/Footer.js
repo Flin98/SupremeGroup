@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 export default function Footer() {
   const footerLinks = [
@@ -26,7 +26,6 @@ export default function Footer() {
         {/* Logo Section */}
         <div className="mb-8">
           <div className="h-12 w-40">
-            {/* Replace with your logo */}
             <img
               src="/logo.png"
               alt="Logo"
@@ -55,7 +54,6 @@ export default function Footer() {
           ))}
         </div>
 
-        {/* Company Address */}
         <div className="flex justify-between items-center text-gray-400 mt-40">
           <p className="text-lg font-semibold">©2023. All Rights Reserved.</p>
           <p className="text-lg font-semibold">

@@ -19,7 +19,7 @@ export default function ContactSection() {
   const handleSubmit = () => {
     if (isFormValid) {
       setShowPopup(true);
-      // Optionally reset form here if needed
+      // Option for reset form here if needed
       // setFormData({ fullName: '', email: '', company: '', message: '' });
     }
   };
@@ -34,7 +34,7 @@ export default function ContactSection() {
       style={{ boxSizing: 'border-box' }}
     >
       <div className="w-full max-w-[1362px] flex flex-wrap md:flex-nowrap gap-12 h-auto">
-        {/* Left Section */}
+        {/* Info Section */}
         <div className="flex-1 min-w-[280px] max-w-[551px] flex flex-col justify-center px-8 py-6 text-white font-manrope text-[20px]">
           <h1 className="text-4xl mb-4">Get in touch</h1>
           <div className="w-12 h-0.5 bg-white mb-6"></div>
@@ -47,7 +47,7 @@ export default function ContactSection() {
           <p>info@supremegroup.co.in</p>
         </div>
 
-        {/* Right Section */}
+        {/* Form Section */}
         <div className="flex-1 min-w-[280px] max-w-[551px] flex flex-col justify-center px-8 py-6 gap-6">
           <input
             name="fullName"
@@ -104,7 +104,7 @@ export default function ContactSection() {
       {/* Responsive popup alert at bottom center */}
       {showPopup && (
         <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 px-6 py-3 bg-blue-600 text-white rounded shadow-lg z-50 flex items-center">
-          <p className="text-lg font-semibold">Form Submitted Successfully</p>
+          <p className="text-lg font-semibold">Form Submitted Successfully.</p>
           <button
             onClick={closePopup}
             className="ml-4 px-3 py-1 bg-white text-blue-600 rounded hover:bg-gray-100"
